@@ -1,0 +1,320 @@
+@media only sreen and (max-width: 576px) {
+
+    /* Section Hero */
+
+    .hero {
+        padding-top: 150px;
+    }
+
+    .hero-title h1 {
+        font-size: 10px;
+    }
+
+    .hero-list {
+        column-gap: 10px;
+    }
+
+    .hero-item {
+        width: 50px;
+        height: 60px;
+    }
+
+    .hero-item  h3{
+        font-size: 25px;
+    }
+
+    /* FOOTER */    
+
+    .email-input {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    /*  Section Program */
+
+    .program-timeline::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 100%;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .program-timeline {
+        max-width: 750px;
+    }
+
+    .program-timeline ul li {
+        width: 50%;
+        max-width: 650px;   
+        position: relative;
+        margin-bottom: 0;
+        background: transparent;
+        padding: 0 0;
+    }
+
+    .program-timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        text-align: right;
+        transform: translateX(-60px);
+    }
+
+    .program-timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(60px);
+
+    }
+
+    .program-timeline ul li::after {
+        content: '';
+        width: 40px;
+        height: 1px;
+        background: #FFFFFF;
+        opacity: 0.3;
+        position: absolute;
+        top: 50%;
+    }
+
+    .program-timeline ul li:nth-child(odd):after {
+        right: -60px;
+    }
+
+    .program-timeline ul li:nth-child(even):after {
+        left: -60px;
+    }
+
+    .program-timeline h3 {
+        margin-bottom: 15px;
+    }
+
+    .program-heading__logo img {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Section Hero */
+
+    .hero {
+        padding-top: 180px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-list {
+        column-gap: 15px;
+    }
+
+    .hero-item {
+        width: 80px;
+        height: 90px;
+    }
+
+    .hero-item  h3{
+        font-size: 25px;
+    }
+
+    /* FOOTER */    
+    
+    .email-input {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    h2 {
+        font-size: 35px;
+    }
+
+    /* Section Nav */
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .nav .top-nav, .header-btn {
+        display: none;
+    }
+
+    .nav-burger-btn {
+        display: block;
+        z-index: 9;
+        right: 15px;
+        background: transparent;
+        width: 35px;
+        background: rgba(25, 25, 25, .8);
+        border-radius: 3px;
+        /* padding: 3px; */
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav.open .header-menu {
+        width: 100%;
+        position: fixed;
+        background: rgb(33, 33, 33);
+        z-index: 1;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 34px;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .nav.open .nav-burger-btn{
+        position: fixed;
+    }
+
+    .nav.open .top-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .nav.open a { 
+        color: #FFFFFF;
+    }
+
+    /* Section Hero */
+
+    .hero {
+        padding-top: 200px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-list {
+        column-gap: 15px;
+    }
+
+    .hero-item {
+        width: 80px;
+        height: 90px;
+    }
+
+    .hero-item  h3{
+        font-size: 25px;
+    }
+
+    /* Section Hero Order */
+
+    .container-order {
+        padding: 25px 0;
+    }
+
+    .hero-order-columns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-column-item {
+        order: 3;
+        width: auto;
+    }
+
+    .order-column-item2 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+
+    .order-column-item2 th {
+        padding-bottom: 0;
+    }
+
+    .order-column-item3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Section About */
+
+    .about {
+        margin: 100px 0;
+        height: auto;
+        
+    }
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-info-box {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .about-info {
+        order: -1;
+    }
+
+    .about-info h2 {
+        text-align: center;
+    }
+
+    /* Section Benefits */
+
+    .benefits-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-heading {
+        margin-bottom: 80px;
+    }
+
+    .benefits-column:not(:last-child){
+        margin-bottom: 70px;
+    }
+
+    .benefits-column div{
+        margin-bottom: 30px;
+    }
+
+    .benefits-column h3{
+        margin-bottom: 10px;
+    }
+
+    /* Sectio Partners */
+
+    .partners-icon-row__item {
+        width: 50%;
+    }
+
+    /* Section Teachers */
+
+    .teachers-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media only sreen and (min-width: 992px) {
+    
+}
